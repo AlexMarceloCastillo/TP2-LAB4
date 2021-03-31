@@ -1,6 +1,6 @@
 <?php
 
-set_time_limit (500);
+set_time_limit (2500);
 error_reporting(0);
 $connection = new MongoDB\Client('mongodb://localhost:27017');
 $database = $connection->local;
