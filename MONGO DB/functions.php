@@ -1,11 +1,11 @@
 <?php
 
 set_time_limit (500);
-//error_reporting(0);
+error_reporting(0);
 $connection = new MongoDB\Client('mongodb://localhost:27017');
 $database = $connection->local;
 $collection = $database->pais;
-//$result = $collection->find();
+$result = [];
 if($_POST){
   for ($codigo=1; $codigo <=300 ; $codigo++) {
     try {
